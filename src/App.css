@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper .playColumn {
+    margin: 2vw;
+    padding: 2vw;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper div ul {
+    list-style: none;
+    padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.playButtons {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notification {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.notification p {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 2vw;
+}
+
+.notification button {
+    border-radius: 8px;
+    border: 0;
+    box-shadow: none;
+    font-weight: bold;
+    line-height: 0;
+    height: 50px;
+    margin: 0 1vw;
+    padding: 0 2vw;
+}
+
+.notification button:hover {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.notification.error button {
+    background: darkred;
+    box-shadow: 5px 4px 1px darkgray;
+    color: white;
+}
+
+.notification.error button:hover {
+    box-shadow: none;
+}
+
+.notification.error p {
+    border: 0.1px solid darkgray;
+    box-shadow: 5px 6px 1px darkgray;
+    color: darkred;
+}
+
+.notification.win button {
+    background: darkgreen;
+    box-shadow: 5px 4px 1px darkgray;
+    color: white;
+}
+
+.notification.win button:hover {
+    box-shadow: none;
+}
+
+.notification.win p {
+    border: 0.1px solid darkgray;
+    box-shadow: 5px 6px 1px darkgray;
+    color: darkgreen;
+}
+
+.notification.lose button {
+    background: darkblue;
+    box-shadow: 5px 4px 1px darkgray;
+    color: white;
+}
+
+.notification.lose button:hover {
+    box-shadow: none;
+}
+
+.notification.lose p {
+    border: 0.1px solid darkgray;
+    box-shadow: 5px 6px 1px darkgray;
+    color: darkblue;
 }
