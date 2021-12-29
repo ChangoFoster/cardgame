@@ -8,14 +8,14 @@ const PlayButton = ({ cards, name, turn }) => {
 
   return (
     <div className="playButtons">
-      <button onClick={() => snap(name)}>
-        Snap
-      </button>
+      <button onClick={() => snap(name)}>Snap</button>
+
       {turn && cards && cards.length > 0 && (
         <button onClick={() => playCards(name, cards)}>
           {`Play ${name}`}
         </button>
       )}
+
     </div>
   )
 }

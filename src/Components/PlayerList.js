@@ -11,11 +11,9 @@ const PlayerList = () => {
     return null
   }
 
-  return (
-    <>
-      {players.map((player) => <Player key={player.name} {...player} />)}
-    </>
-  )
+  return (<>
+    {players.map((player) => <Player key={player.name} {...player} />)}
+  </>)
 }
 
 export default PlayerList

@@ -43,6 +43,7 @@ module.exports = {
         after: true,
       },
     ],
+    'jest/require-hook': 0,
   },
   settings: {
     react: {

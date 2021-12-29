@@ -13,7 +13,7 @@ const DeckList = () => {
       <p>{`Win: ${win}`}</p>
       <p>Size: {deck && deck.cards.length}</p>
       <div className="playButtons">
-        <button onClick={async () => await createGame()}>
+        <button onClick={() => createGame()}>
           Create game
         </button>
       </div>
